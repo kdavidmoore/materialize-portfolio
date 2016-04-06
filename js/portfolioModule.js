@@ -15,11 +15,10 @@ portfolio.config(function($routeProvider){
 	});
 	// send the user back to the home page if the route is not valid
 	$routeProvider.otherwise({
-		templateUrl: 'pages/about.html',
-		controller: 'mainController'
+		redirectTo: 'pages/about.html'
 	});
 })
 
-portfolio.controller('mainController', function($scope){
+/* portfolio.controller('mainController', function($scope){
 	// main controller
-})
+})*/
