@@ -39,5 +39,14 @@
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
 
-.section { height: 80vh; }
-.card {	height: 450px; }
+.parallax-container {
+	height: 80vh;
+}
+
+.card {
+	height: 450px;
+}
+
+.section {
+	min-height: 80vh;
+}
