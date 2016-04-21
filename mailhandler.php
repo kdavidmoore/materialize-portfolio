@@ -4,7 +4,7 @@ require_once 'swiftmailer/lib/swift_required.php';
 // get user info from the contact form
 $firstName = $_POST['first_name'];
 $lastName = $_POST['last_name'];
-$fullName = $firstName . $lastName;
+$fullName = $firstName . ' ' . $lastName;
 $email = $_POST['email'];
 $myMessage = $_POST['message'];
 
@@ -33,5 +33,3 @@ $message = Swift_Message::newInstance()
   ;
 
 $result = $mailer->send($message);
-
-?>

@@ -13,18 +13,20 @@
 <body ng-controller="portfolioController">
 
   <nav class="grey lighten-5" role="navigation">
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper container scrollspy" id="top">
       <a href="#!" class="brand-logo right">Keith D. Moore&nbsp;</a>
       <a href="#!" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
-        <li><a href="#skills" class="scrollspy">Skills</a></li>
-        <li><a href="#projects" class="scrollspy">Projects</a></li>
-        <li><a href="#contact" class="scrollspy">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
       <ul class="side-nav" id="mobile-nav">
-        <li><a href="#skills" class="scrollspy">Skills</a></li>
-        <li><a href="#projects" class="scrollspy">Projects</a></li>
-        <li><a href="#contact" class="scrollspy">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </div>
   </nav>
@@ -33,7 +35,7 @@
     <div class="parallax"><img src="images/parallax3.jpg"></div>
   </div>
 
-  <div class="section" id="skills">
+  <div class="section scrollspy" id="skills">
     <div class="container">
       <div class="row">
         <div class="col s12 m4 text-center">
@@ -53,6 +55,7 @@
         <div class="col s12 m4">
           <h4>Other Skills</h4>
           <h5><span class="devicons devicons-git"></span> Git</h5>
+          <h5><span class="devicons devicons-compass"></span> Compass / SASS</h5>
           <h5><span class="devicons devicons-linux"></span> Linux</h5>
           <h5><span class="devicons devicons-streamline"></span> GIS</h5>
           <h5><span class="devicons devicons-database"></span> R</h5>
@@ -62,7 +65,7 @@
     </div>
   </div>
 
-  <div class="section" id="projects">
+  <div class="section scrollspy" id="projects">
     <div class="container">
       <div class="row">
         <div class="col s12 m6" ng-repeat="card in cards">
@@ -83,7 +86,7 @@
     </div>
   </div>
 
-  <div class="section" id="contact">
+  <div class="section scrollspy" id="contact">
     <div class="container">
       <div class="row">
         <form class="col s12" action="mailhandler.php" method="post">
@@ -116,6 +119,31 @@
       </div>
     </div>
   </div>
+
+  <footer class="page-footer grey lighten-4">
+    <div class="container scrollspy" id="about">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="grey-text text-darken-3">About Keith</h5>
+          <p class="grey-text text-darken-2">I was born in Griffin, Georgia and currently reside in Peachtree City. In my free time, I enjoy walking, hiking, rock-hounding, and looking at satellite imagery.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="grey-text text-darken-3">Links</h5>
+          <ul>
+            <li><a class="grey-text text-darken-2" href="https://github.com/kdavidmoore">GitHub</a></li>
+            <li><a class="grey-text text-darken-2" href="https://linkedin.com/in/kdavidmoore">LinkedIn</a></li>
+            <li><a class="grey-text text-darken-2" href="https://twitter.com/keith_in_atl">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container grey-text text-darken-3">
+      &copy; 2016 Keith D. Moore
+      <a class="grey-text text-darken-3 right" href="#top">Top</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
