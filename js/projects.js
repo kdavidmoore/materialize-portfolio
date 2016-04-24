@@ -7,9 +7,9 @@ function Card(title, src, description, demo){
 }
 // create an array and push each card to the array using the constructor
 var cards = [];
-cards.push(new Card("Languages of the World","langs","Filtering countries of the world by major languages spoken, total population, and GDP.","http://kdavidmoore.com/languages"));
+cards.push(new Card("Languages of the World","langs","Pulls data from JSON files and filters by each category using AngularJS and DataMaps.","http://kdavidmoore.com/languages"));
 cards.push(new Card("Chat Room","chat","A basic chat room built using Node.js. Each new tab or window opens a new chat client.","https://shielded-fortress-12118.herokuapp.com/"));
-cards.push(new Card("Search Places","maps","Search for different types of professional services in several major U.S. cities.","http://kdavidmoore.com/search-places"));
-cards.push(new Card("Movie Crawler","movies","See what's playing and search for movies, TV shows, and actors.","http://kdavidmoore.com/movie-crawler"));
-cards.push(new Card("Panama Papers Tweets","tweets","Get the latest scoop on the Panama Papers leaks.","http://kdavidmoore.com/panama-papers"));
-cards.push(new Card("Calculator","calc","A basic calculator written in JavaScript.","http://kdavidmoore.com/calculator"));
+cards.push(new Card("Search Places","maps","Displays information about places using Google Maps API and AngularJS routing.","http://kdavidmoore.com/search-places"));
+cards.push(new Card("Movie Crawler","movies","Dynamically pulls data from themoviedb.org using AJAX and displays results using Isotope filtering.","http://kdavidmoore.com/movie-crawler"));
+cards.push(new Card("Panama Papers Tweets","tweets","Dynamically pulls tweet data from Twitter API and displays results with a language filter.","http://kdavidmoore.com/panama-papers"));
+cards.push(new Card("Calculator","calc","A basic calculator written using jQuery.","http://kdavidmoore.com/calculator"));
