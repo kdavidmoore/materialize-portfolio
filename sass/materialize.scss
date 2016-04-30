@@ -39,10 +39,18 @@
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
 
-.parallax-container {
-	height: 50vh;
-}
+// .parallax-container {
+// 	height: 50vh;
+// }
 
 // .section {
 // 	min-height: 80vh;
 // }
+
+#skills {
+	margin-top: 100vh;
+}
+
+.margin-adjusted {
+	margin-top: 64px;
+}
